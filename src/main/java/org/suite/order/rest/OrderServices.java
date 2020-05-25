@@ -27,6 +27,8 @@ public class OrderServices implements IOrderServices{
 	@RequestMapping(value = "/createOrder", method = RequestMethod.POST)
 	public CreateOrderOutput createOrder(@RequestBody CreateOrderInput orderInput, @RequestParam String sc)
 	{
+	
+		
 		CreateOrderOutput output = new CreateOrderOutput();
 	
 		System.out.println("sc = "+ sc);
